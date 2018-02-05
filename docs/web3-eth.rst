@@ -607,23 +607,24 @@ Returns
 
 ``Promise`` returns ``Object`` - The block object:
 
-  - ``number`` - ``Number``: The block number. ``null`` when its pending block.
-  - ``hash`` 32 Bytes - ``String``: Hash of the block. ``null`` when its pending block.
-  - ``parentHash`` 32 Bytes - ``String``: Hash of the parent block.
-  - ``nonce`` 8 Bytes - ``String``: Hash of the generated proof-of-work. ``null`` when its pending block.
-  - ``sha3Uncles`` 32 Bytes - ``String``: SHA3 of the uncles data in the block.
-  - ``logsBloom`` 256 Bytes - ``String``: The bloom filter for the logs of the block. ``null`` when its pending block.
-  - ``transactionsRoot`` 32 Bytes - ``String``: The root of the transaction trie of the block
-  - ``stateRoot`` 32 Bytes - ``String``: The root of the final state trie of the block.
-  - ``miner`` - ``String``: The address of the beneficiary to whom the mining rewards were given.
   - ``difficulty`` - ``String``: Integer of the difficulty for this block.
-  - ``totalDifficulty`` - ``String``: Integer of the total difficulty of the chain until this block.
   - ``extraData`` - ``String``: The "extra data" field of this block.
-  - ``size`` - ``Number``: Integer the size of this block in bytes.
   - ``gasLimit`` - ``Number``: The maximum gas allowed in this block.
   - ``gasUsed`` - ``Number``: The total used gas by all transactions in this block.
+  - ``hash`` 32 Bytes - ``String``: Hash of the block. ``null`` when its pending block.
+  - ``logsBloom`` 256 Bytes - ``String``: The bloom filter for the logs of the block. ``null`` when its pending block.
+  - ``miner`` - ``String``: The address of the beneficiary to whom the mining rewards were given.
+  - ``nonce`` 8 Bytes - ``String``: Hash of the generated proof-of-work. ``null`` when its pending block.
+  - ``number`` - ``Number``: The block number. ``null`` when its pending block.
+  - ``parentHash`` 32 Bytes - ``String``: Hash of the parent block.
+  - ``receiptsRoot`` 32 Bytes - ``String``: The root of the receipts trie of the block
+  - ``sha3Uncles`` 32 Bytes - ``String``: SHA3 of the uncles data in the block.
+  - ``size`` - ``Number``: Integer the size of this block in bytes.
+  - ``stateRoot`` 32 Bytes - ``String``: The root of the final state trie of the block.
   - ``timestamp`` - ``Number``: The unix timestamp for when the block was collated.
+  - ``totalDifficulty`` - ``String``: Integer of the total difficulty of the chain until this block.
   - ``transactions`` - ``Array``: Array of transaction objects, or 32 Bytes transaction hashes depending on the ``returnTransactionObjects`` parameter.
+  - ``transactionsRoot`` 32 Bytes - ``String``: The root of the transactions trie of the block
   - ``uncles`` - ``Array``: Array of uncle hashes.
 
 -------
